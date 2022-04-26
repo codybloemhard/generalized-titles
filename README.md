@@ -3,24 +3,35 @@ Generate some j a z z titles for j a z z pieces.
 
 Jazz pieces have some pretty cool names such as "Along came Betty" that have a part that you can easily generalize: "Along came {name}".
 
+# sources
+- UCI Machine Learning Repository: Gender by Name Data Set
+  - https://archive.ics.uci.edu/ml/datasets/Gender+by+Name
+
 ## existing titles to generalize
 
 Bessie’s Blues
 Mary’s Blues
-Billie’s Bounce (Bill’s Bounce)
+Aunt Hagar’s Blues
+
+Blues For Alice
+
+Cool Blues
+Funky Blues
+
+West Coast Blues
+Blues In Frankie’s Flat
+Billie’s Bounce
 Blue Bird
 Blue Brew
 Blue Haze
 Blue Lou
 Blue Train (Blue Trane)
 Bouncing With Bud
-Cool Blues
 Cousin Mary
 Crazy Chords
 Dexter’s Mood
 Dexter’s Riff
 Dizzy Atmosphere
-Funky Blues
 Goin’ To Minton’s
 Half Nelson
 I Mean You
@@ -42,7 +53,6 @@ Big Nick
 Blue Bossa
 Blue In Green
 Blue Monk
-Blues For Alice
 Can’t Help Lovin’ Dat Man
 Come Sunday
 Could It Be You
@@ -67,7 +77,6 @@ The Green Mountains
 The Intrepid Fox
 Three Flowers
 Waltz For Debby
-West Coast Blues
 Alfie’s Theme
 Monk’s Shop
 Oh, What A Beautiful Mornin’
@@ -96,10 +105,8 @@ A Cool Shade Of Blue
 A Foggy Day (In London Town)
 A Song For You
 Allen’s Alley
-Aunt Hagar’s Blues
 Blue Friday
 Blue Soul
-Blues In Frankie’s Flat
 Buster’s Last Stand
 Dexter Digs In
 Dinner For One, Please James
