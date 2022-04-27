@@ -9,15 +9,6 @@ Jazz pieces have some pretty cool names such as "Along came Betty" that have a p
 
 ## existing titles to generalize
 
-Bessie’s Blues
-Mary’s Blues
-Aunt Hagar’s Blues
-
-Blues For Alice
-
-Cool Blues
-Funky Blues
-
 West Coast Blues
 Blues In Frankie’s Flat
 Billie’s Bounce
