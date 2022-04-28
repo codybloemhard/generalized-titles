@@ -1,4 +1,5 @@
 import sys
+import random
 import pathlib
 import os
 
@@ -25,7 +26,7 @@ for line in file:
             continue
         word = word.replace('\n', '')
         if word[0] == '/':
-            rule.append((True, word))
+            rule.append((True, word.replace('/', '')))
         else:
             rule.append((False, word))
     if len(rule) > 0:
@@ -41,11 +42,12 @@ class Tree:
 root = Tree(None)
 
 for path in pathlib.Path('data').rglob('*.sub'):
-    data = path.read_text()
+    data = list(filter(lambda x: x != '', path.read_text().split('\n')))
     current = root
     segments = os.fspath(path).split('/')
-    last = len(segments) - 1
+    last = len(segments) - 2
     for i, segment in enumerate(segments[1:]):
+        segment = segment.replace('.sub', '')
         if i is not last:
             if not segment in current.children:
                 current.children[segment] = Tree(None)
@@ -62,4 +64,61 @@ def print_tree(tree, name, depth):
     else:
         print(pad + name + ' = DATA')
 
-print_tree(root, 'root', 0)
+# print_tree(root, 'root', 0)
+
+def find_category(category, tree):
+    if tree.data is None:
+        for name, child in tree.children.items():
+            if name == category:
+                return child
+            else:
+                res = find_category(category, child)
+                if res is not None:
+                    return res
+    else:
+        return None
+    return None
+
+def pick_item(tree):
+    if tree.data is None:
+        l = len(tree.children)
+        i = 0
+        if l > 1:
+            i = random.randint(0, l - 1)
+        return pick_item(list(tree.children.values())[i])
+    else:
+        l = len(tree.data)
+        i = random.randint(0, l - 1)
+        r = tree.data[i]
+        return r
+
+# pick a rule
+
+def generate(rules, root):
+    res = ''
+    rule = rules[random.randint(0, len(rules) - 1)]
+
+    for (substitute, string) in rule:
+        if substitute:
+            cat = find_category(string, root)
+            if cat is None:
+                #print('____')
+                #print('Could not find substitution for "/' + string + '" in the data tree!')
+                res += '____: '
+                res += 'Could not find substitution for "/' + string + '" in the data tree!'
+                return res
+            item = pick_item(cat)
+            res += item + ' '
+            #print(item + ' ', end = '')
+        else:
+            res += string + ' '
+            #print(string + ' ', end = '')
+    return res
+
+l = 1
+if len(sys.argv) > 2:
+    l = int(sys.argv[2])
+
+for _ in range(l):
+    print(generate(rules, root))
+

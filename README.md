@@ -18,7 +18,6 @@ Blue Haze
 Blue Lou
 Blue Train (Blue Trane)
 Bouncing With Bud
-Cousin Mary
 Crazy Chords
 Dexter’s Mood
 Dexter’s Riff
