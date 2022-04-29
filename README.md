@@ -9,24 +9,6 @@ Jazz pieces have some pretty cool names such as "Along came Betty" that have a p
 
 ## existing titles to generalize
 
-Dexter’s Mood
-Blues In Frankie’s Flat
-Billie’s Bounce
-Dexter’s Riff
-Goin’ To Minton’s
-Have you met miss Jones?
-Alfie’s Theme
-Monk’s Shop
-Bernie’s Tune
-I Keep Going Back To Joe’s
-Lonnie’s Lament
-Allen’s Alley
-Buster’s Last Stand
-Duke’s Place
-John’s Bunch
-Alexander’s Ragtime Band
-Dexter’s Mood
-
 Freddie Freeloader
 
 But not for me

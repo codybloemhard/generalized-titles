@@ -1,61 +1,75 @@
 
-/name Blues
- Bessie’s Blues
- Mary’s Blues
- Aunt Hagar’s Blues
+{Mary,name}'s Blues
 
-Blues for /name
- Blues for Alice
+Aunt {Hagar,female}'s Blues
 
-Cousin /name
- Cousin Mary
+Blues for {Alice,name}
 
-Uncle /male
+Cousin {Mary,name}
 
-Bouncing with /name
- Bouncing with Bud
+Bouncing with {Bud,name}
 
-Half /name
- Half Nelson
+Half {Nelson,name}
 
-I remember /name
- I remember Clifford
+I remember {Clifford,name}
 
-Big /name
- Big Nick
+Big {Nick,name}
 
-Waltz for /name
- Waltz for Debby
+Waltz for {Debby,name}
 
-Along came /name
- Along came Betty
+Along came {Betty,name}
 
-Sister /name
- Sister Sadie
+Sister {Sadie,name}
 
-Song for /name
- Song for Helen
+Song for {Helen,name}
 
-Theme for /name
- Theme for Ernie
+Theme for {Ernie,name}
 
-/name digs in
- Dexter digs in
+{Dexter,name} digs in
 
-Dinner for one, please /name
- Dinner for one, please James
+Dinner for one, please {James,name}
 
-I remember /name
- I remember Duke
+I remember {Duke,name}
 
-/name one-note
- Johnny one-note
+{Johnny,name} one-note
 
-One for /name
- One for Helen
+One for {Helen,name}
 
-/name White
- Bob White
+{Bob,name} White
 
-When /name loved me
- When Joanna loved me
+When {Joanna,name} loved me
+
+{Dexter,name}’s Mood
+
+Blues In {Frankie,name}’s Flat
+
+{Billie,name}’s Bounce
+
+{Dexter,name}’s Riff
+
+Goin’ To {Minton,name}’s
+
+Have you met miss {Jones,female}?
+
+{Alfie,name}’s Theme
+
+{Monk,name}’s Shop
+
+{Bernie,name}’s Tune
+
+I Keep Going Back To {Joe,name}’s
+
+{Lonnie,name}’s Lament
+
+{Allen,name}’s Alley
+
+{Buster,name}’s Last Stand
+
+{Duke,name}’s Place
+
+{John,name}’s Bunch
+
+{Alexander,name}’s Ragtime Band
+
+{Dexter,name}’s Mood
+

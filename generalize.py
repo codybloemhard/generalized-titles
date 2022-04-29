@@ -2,6 +2,7 @@ import sys
 import random
 import pathlib
 import os
+from dataclasses import dataclass
 
 # need input file
 
@@ -11,26 +12,63 @@ if len(sys.argv) < 2:
 
 # parse rules
 
-rules = []
+prerules = []
 file = open(sys.argv[1], "r")
 
 for line in file:
     if len(line) == 0:
         continue
-    if line[0].isspace():
-        continue
-    words = line.split(' ')
+
     rule = []
-    for word in words:
-        if len(word) == 0:
-            continue
-        word = word.replace('\n', '')
-        if word[0] == '/':
-            rule.append((True, word.replace('/', '')))
-        else:
-            rule.append((False, word))
+    segment = ''
+    sub = False
+
+    for char in line:
+        if char == '{':
+            if segment != '':
+                rule.append((segment, False))
+                segment = ''
+            sub = True
+        elif char == '}':
+            if not sub:
+                print('Closing "}" without opening "{" in "' + line + '"')
+                exit()
+            rule.append((segment, True))
+            segment = ''
+        elif char != '\n':
+            segment += char
+
+    if segment != '':
+        rule.append((segment, False))
+
     if len(rule) > 0:
-        rules.append(rule)
+        prerules.append(rule)
+
+class Segment:
+    """Substitution rule segment"""
+
+@dataclass
+class String(Segment):
+    string: str
+
+@dataclass
+class Sub(Segment):
+    og: str
+    sub: str
+
+rules = []
+for prerule in prerules:
+    rule = []
+    for (segment, is_sub) in prerule:
+        if not is_sub:
+            rule.append(String(string=segment))
+        else:
+            fields = segment.split(',')
+            if len(fields) < 2:
+                print('Not enough fields in sub: "{' + segment + '}" in rule: "' + str(prerule) + '"')
+                exit()
+            rule.append(Sub(og=fields[0],sub=fields[1]))
+    rules.append(rule)
 
 # build data tree
 
@@ -98,21 +136,17 @@ def generate(rules, root):
     res = ''
     rule = rules[random.randint(0, len(rules) - 1)]
 
-    for (substitute, string) in rule:
-        if substitute:
-            cat = find_category(string, root)
+    for segment in rule:
+        if isinstance(segment, Sub):
+            cat = find_category(segment.sub, root)
             if cat is None:
-                #print('____')
-                #print('Could not find substitution for "/' + string + '" in the data tree!')
                 res += '____: '
-                res += 'Could not find substitution for "/' + string + '" in the data tree!'
+                res += 'Could not find substitution for "/' + segment.sub + '" in the data tree!'
                 return res
             item = pick_item(cat)
-            res += item + ' '
-            #print(item + ' ', end = '')
+            res += item
         else:
-            res += string + ' '
-            #print(string + ' ', end = '')
+            res += segment.string
     return res
 
 l = 1
