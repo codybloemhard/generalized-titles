@@ -55,19 +55,24 @@ class String(Segment):
 class Sub(Segment):
     og: str
     sub: str
+    first_letter: str
 
 rules = []
 for prerule in prerules:
     rule = []
     for (segment, is_sub) in prerule:
         if not is_sub:
-            rule.append(String(string=segment))
+            rule.append(String(string = segment))
         else:
             fields = segment.split(',')
             if len(fields) < 2:
                 print('Not enough fields in sub: "{' + segment + '}" in rule: "' + str(prerule) + '"')
                 exit()
-            rule.append(Sub(og=fields[0],sub=fields[1]))
+            first = None
+            for field in fields[2:]:
+                if len(field) == 1: # first letter
+                    first = field.lower()
+            rule.append(Sub(og = fields[0], sub = fields[1], first_letter = first))
     rules.append(rule)
 
 # build data tree
@@ -144,6 +149,11 @@ def generate(rules, root):
                 res += 'Could not find substitution for "/' + segment.sub + '" in the data tree!'
                 return res
             item = pick_item(cat)
+            if segment.first_letter != None:
+                i = 1000
+                while item[0].lower() != segment.first_letter and i > 0:
+                    i -= 1
+                    item = pick_item(cat)
             res += item
         else:
             res += segment.string

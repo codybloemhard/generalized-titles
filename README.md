@@ -7,6 +7,11 @@ Jazz pieces have some pretty cool names such as "Along came Betty" that have a p
 - UCI Machine Learning Repository: Gender by Name Data Set
   - https://archive.ics.uci.edu/ml/datasets/Gender+by+Name
 
+# useage
+
+Generate 50 jazz titles
+```python generalize.py rules/jazz-titles 50```
+
 ## existing titles to generalize
 
 Freddie Freeloader

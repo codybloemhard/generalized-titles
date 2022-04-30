@@ -7,7 +7,7 @@ Blues for {Alice,name}
 
 Cousin {Mary,name}
 
-Bouncing with {Bud,name}
+Bouncing with {Bud,name,b}
 
 Half {Nelson,name}
 
@@ -19,13 +19,13 @@ Waltz for {Debby,name}
 
 Along came {Betty,name}
 
-Sister {Sadie,name}
+Sister {Sadie,name,s}
 
 Song for {Helen,name}
 
 Theme for {Ernie,name}
 
-{Dexter,name} digs in
+{Dexter,name,d} digs in
 
 Dinner for one, please {James,name}
 
@@ -41,9 +41,9 @@ When {Joanna,name} loved me
 
 {Dexter,name}’s Mood
 
-Blues In {Frankie,name}’s Flat
+Blues In {Frankie,name,f}’s Flat
 
-{Billie,name}’s Bounce
+{Billie,name,b}’s Bounce
 
 {Dexter,name}’s Riff
 
@@ -59,9 +59,9 @@ Have you met miss {Jones,female}?
 
 I Keep Going Back To {Joe,name}’s
 
-{Lonnie,name}’s Lament
+{Lonnie,name,l}’s Lament
 
-{Allen,name}’s Alley
+{Allen,name,a}’s Alley
 
 {Buster,name}’s Last Stand
 
@@ -70,6 +70,4 @@ I Keep Going Back To {Joe,name}’s
 {John,name}’s Bunch
 
 {Alexander,name}’s Ragtime Band
-
-{Dexter,name}’s Mood
 
