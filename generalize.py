@@ -56,6 +56,7 @@ class Sub(Segment):
     og: str
     sub: str
     first_letter: str
+    unique: bool
 
 rules = []
 for prerule in prerules:
@@ -69,10 +70,18 @@ for prerule in prerules:
                 print('Not enough fields in sub: "{' + segment + '}" in rule: "' + str(prerule) + '"')
                 exit()
             first = None
+            _unique = False
             for field in fields[2:]:
                 if len(field) == 1: # first letter
                     first = field.lower()
-            rule.append(Sub(og = fields[0], sub = fields[1], first_letter = first))
+                if field == 'unique':
+                    _unique = True
+            rule.append(Sub(
+                og = fields[0],
+                sub = fields[1],
+                first_letter = first,
+                unique = _unique
+            ))
     rules.append(rule)
 
 # build data tree
@@ -140,6 +149,7 @@ def pick_item(tree):
 def generate(rules, root):
     res = ''
     rule = rules[random.randint(0, len(rules) - 1)]
+    subs = []
 
     for segment in rule:
         if isinstance(segment, Sub):
@@ -149,12 +159,12 @@ def generate(rules, root):
                 res += 'Could not find substitution for "/' + segment.sub + '" in the data tree!'
                 return res
             item = pick_item(cat)
-            if segment.first_letter != None:
-                i = 1000
-                while item[0].lower() != segment.first_letter and i > 0:
-                    i -= 1
-                    item = pick_item(cat)
+            i = 1000
+            while i > 0 and ((segment.first_letter != None and item[0].lower() != segment.first_letter) or (segment.unique and item in subs)):
+                i -= 1
+                item = pick_item(cat)
             res += item
+            subs.append(item)
         else:
             res += segment.string
     return res

@@ -5,30 +5,30 @@ Blues for {Alice,name}
 Cousin {Mary,name}
 Bouncing with {Bud,name,b}
 Half {Nelson,name}
-I remember {Clifford,name}
+I Remember {Clifford,name}
 Big {Nick,name}
 Waltz for {Debby,name}
-Along came {Betty,name}
+Along Came {Betty,name}
 Sister {Sadie,name,s}
 Song for {Helen,name}
 Theme for {Ernie,name}
-{Dexter,name,d} digs in
-Dinner for one, please {James,name}
-I remember {Duke,name}
-{Johnny,name} one-note
+{Dexter,name,d} Digs In
+Dinner for One, Please {James,name}
+I Remember {Duke,name}
+{Johnny,name} One-Note
 One for {Helen,name}
 {Bob,name} {White,colour}
-When {Joanna,name} loved me
+When {Joanna,name} Loved Me
 {Dexter,name}’s Mood
-Blues In {Frankie,name,f}’s Flat
+Blues in {Frankie,name,f}’s Flat
 {Billie,name,b}’s Bounce
 {Dexter,name}’s Riff
-Goin’ To {Minton,name}’s
-Have you met miss {Jones,female}?
+Goin’ to {Minton,name}’s
+Have You Met Miss {Jones,female}?
 {Alfie,name}’s Theme
 {Monk,name}’s Shop
 {Bernie,name}’s Tune
-I Keep Going Back To {Joe,name}’s
+I Keep Going Back to {Joe,name}’s
 {Lonnie,name,l}’s Lament
 {Allen,name,a}’s Alley
 {Buster,name}’s Last Stand
@@ -41,15 +41,15 @@ I Keep Going Back To {Joe,name}’s
 {Blue,colour} Haze
 {Blue,colour} Train
 {Blue,colour,b} Bossa
-{Blue,colour} In {Green,colour}
+{Blue,colour} in {Green,colour,unique}
 {Blue,colour} Monk
-Man In The {Green,colour} Shirt
+Man in the {Green,colour} Shirt
 The {Blue,colour} Room
 The {Green,colour} Mountains
 Bein’ {Green,colour}
 {Blue,colour,b} Bird
 {Blue,colour} Prelude
-A Cool Shade Of {Blue,colour}
+A Cool Shade of {Blue,colour}
 {Blue,colour} Friday
 {Blue,colour} Soul
 
