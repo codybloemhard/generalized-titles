@@ -35,6 +35,7 @@ I Keep Going Back to {Joe,name}’s
 {Duke,name}’s Place
 {John,name}’s Bunch
 {Alexander,name}’s Ragtime Band
+{Freddie,name,f} Freeloader
 
 {Blue,colour,b} Bird
 {Blue,colour,b} Brew
@@ -52,4 +53,15 @@ Bein’ {Green,colour}
 A Cool Shade of {Blue,colour}
 {Blue,colour} Friday
 {Blue,colour} Soul
+
+{West Coast,city} Blues
+Alice In {Wonderland,place}
+Dear Old {Stockholm,city}
+Nostalgia In {Times Square,place}
+The Girl From {Ipanema,city}
+Drop Me Off In {Harlem,city}
+{Harlem,city} Nocturne
+I Left My Heart In {San Francisco,city}
+Mission To {Moscow,city,m}
+A Foggy Day (In {London,city} Town)
 

@@ -13,16 +13,16 @@ for row in reader:
         first = False
         continue
 
-    if row[1] == "M":
+    if row[1] == 'M':
         names_male.append(row[0])
     else:
         names_female.append(row[0])
 
 def write_to_file(names, filename):
-    f = open(filename, "w")
+    f = open(filename, 'w')
     for name in names:
-        f.write(name + "\n")
+        f.write(name + '\n')
     f.close()
 
-write_to_file(names_male, "names-male")
-write_to_file(names_female, "names-female")
+write_to_file(names_male, 'names-male')
+write_to_file(names_female, 'names-female')

@@ -8,6 +8,9 @@ Jazz pieces have some pretty cool names such as "Along came Betty" that have a p
   - https://archive.ics.uci.edu/ml/datasets/Gender+by+Name
 - color names
   - https://hexcolor.co/color-names
+- world cities
+  - https://simplemaps.com/data/world-cities
+    - https://creativecommons.org/licenses/by/4.0/
 
 # useage
 
@@ -15,8 +18,6 @@ Generate 50 jazz titles
 ```python generalize.py rules/jazz-titles 50```
 
 ## existing titles to generalize
-
-Freddie Freeloader
 
 But not for me
 I Mean You
@@ -29,53 +30,44 @@ I Like The Likes Of You
 It All Depends On You
 A Song For You
 
-Cool Blues
-Funky Blues
-West Coast Blues
-Crazy Chords
-Dizzy Atmosphere
-500 Miles High
-A Fine Romance
-A Night In Tunisia
-African Flower (Petite Fleur Africaine)
-Afternoon In Paris
-Alice In Wonderland
 April In Paris
 April Joy
 Autumn In New York
-Can’t Help Lovin’ Dat Man
+Afternoon In Paris
+A Night In Tunisia
 Come Sunday
-Dear Old Stockholm
 I’ll Remember April
-In a Sentimental Mood
 June In January
-Memories Of Tomorrow
 Midnight Mood
-My Funny Valentine
+Memories Of Tomorrow
 My Shining Hour
-Nostalgia In Times Square
-Take The “A” Train
-The Girl From Ipanema (GarÙta DeIpanema)
-The Intrepid Fox
-Three Flowers
 Oh, What A Beautiful Mornin’
 September Song
-A Dreamer’s Holiday
-Drop Me Off In Harlem
-Harlem Nocturne
-I Left My Heart In San Francisco
 It’s A Good Day
+They Say It’s Spring
+‘Tis Autumn
+Saturday Night
+Memphis In June
 It’s A Lovely Day Today
 It’s A Most Unusual Day
 Lazy Afternoon
 Wintersong
-A Foggy Day (In London Town)
-Memphis In June
-Mission To Moscow
+
+Cool Blues
+Funky Blues
+Crazy Chords
+Dizzy Atmosphere
+500 Miles High
+A Fine Romance
+African Flower (Petite Fleur Africaine)
+Can’t Help Lovin’ Dat Man
+In a Sentimental Mood
+My Funny Valentine
+Take The “A” Train
+The Intrepid Fox
+Three Flowers
+A Dreamer’s Holiday
 Mr. Lucky
 Mr. Wonderful
-Saturday Night
 The Man With The Horn
-They Say It’s Spring
-‘Tis Autumn
 Dance Of The Octopus
