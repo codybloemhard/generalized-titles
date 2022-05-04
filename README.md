@@ -30,28 +30,17 @@ I Like The Likes Of You
 It All Depends On You
 A Song For You
 
-April In Paris
-April Joy
-Autumn In New York
-Afternoon In Paris
-A Night In Tunisia
-Come Sunday
-I’ll Remember April
 June In January
-Midnight Mood
-Memories Of Tomorrow
+A Night In Tunisia
 My Shining Hour
 Oh, What A Beautiful Mornin’
 September Song
 It’s A Good Day
-They Say It’s Spring
-‘Tis Autumn
 Saturday Night
-Memphis In June
 It’s A Lovely Day Today
 It’s A Most Unusual Day
 Lazy Afternoon
-Wintersong
+Memories Of Tomorrow
 
 Cool Blues
 Funky Blues
