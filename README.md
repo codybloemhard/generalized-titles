@@ -11,6 +11,8 @@ Jazz pieces have some pretty cool names such as "Along came Betty" that have a p
 - world cities
   - https://simplemaps.com/data/world-cities
     - https://creativecommons.org/licenses/by/4.0/
+- english adjectives and nouns
+  - https://gist.github.com/hugsy/8910dc78d208e40de42deb29e62df913
 
 # useage
 
@@ -32,31 +34,17 @@ A Song For You
 
 June In January
 A Night In Tunisia
-My Shining Hour
 Oh, What A Beautiful Mornin’
 September Song
-It’s A Good Day
 Saturday Night
-It’s A Lovely Day Today
-It’s A Most Unusual Day
-Lazy Afternoon
 Memories Of Tomorrow
 
-Cool Blues
-Funky Blues
-Crazy Chords
-Dizzy Atmosphere
 500 Miles High
 A Fine Romance
 African Flower (Petite Fleur Africaine)
 Can’t Help Lovin’ Dat Man
-In a Sentimental Mood
-My Funny Valentine
 Take The “A” Train
-The Intrepid Fox
 Three Flowers
 A Dreamer’s Holiday
-Mr. Lucky
-Mr. Wonderful
 The Man With The Horn
 Dance Of The Octopus
