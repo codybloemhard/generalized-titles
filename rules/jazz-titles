@@ -17,7 +17,6 @@ Dinner for One, Please {James,name}
 I Remember {Duke,name}
 {Johnny,name} One-Note
 One for {Helen,name}
-{Bob,name} {White,colour}
 When {Joanna,name} Loved Me
 {Dexter,name}’s Mood
 Blues in {Frankie,name,f}’s Flat
@@ -74,7 +73,6 @@ Come {Sunday,time}
 {Midnight,time,m} Mood
 They Say It’s {Spring,time}
 ‘Tis {Autumn,time}
-{Memphis,city} In {June,time}
 {Winter,time}song
 
 My {Shining,adjective} Hour
@@ -91,3 +89,12 @@ My {Funny,adjective} Valentine
 The {Intrepid,adjective} Fox
 Mr. {Lucky,adjective}
 Mr. {Wonderful,adjective}
+Oh, What A {Beautiful,adjective} Mornin’
+A {Fine,adjective} Romance
+
+Take The “{A,letter}” Train
+
+{Memphis,city} In {June,time}
+{Bob,name} {White,colour}
+A {Night,time} In {Tunisia,city}
+{ ,adjective} { ,noun}
